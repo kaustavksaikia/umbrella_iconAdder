@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main" id="container">
+        <div class="left">
+            <div class="img-container">
+                <img class="loader" id="blueLoader" src="loader_blue.svg">
+                <img class="loader" id="pinkLoader" src="loader_pink.svg">
+                <img class="loader" id="yellowLoader" src="loader_yellow.svg">
+                <div id="overlayContainer">
+                    <div><img id="image"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div>
+                <h1>Custom Umbrella</h1>
+                <button class="button" id="blue">
+                </button>
+                <button class="button" id="pink">
+                </button>
+                <button class="button" id="yellow">
+                </button>
+                <h3>Customize your umbrella</h3>
+                <P class="p1">Upload a logo for an instant preview.</P>
+                <p class="p2">.png and .jpg files only. Max file size is 5MB.</p>
+                <input type="file" id="file-input" accept=".png,.jpg">
+                <label for="file-input" id="uploader">
+                    <img id="whiteLoader" src="loader_white.svg">
+                    <img id="uploadIcon" src="uploader_final_icon.svg">
+                    <span id="uploadSign">UPLOAD LOGO</span>
+                    <span id="cancelButton"><img id="cancelSign" src="cross_final_icon.svg"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
